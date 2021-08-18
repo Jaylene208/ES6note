@@ -11,16 +11,14 @@ function f() {
 //const : 声明一个只读的常量立即初始化,块级作用域
 const a = [];
 a.push('Hello'); 
-console.log(a.length);    
+a.length;    
 
-const foo = Object.freeze({});  // Object.freeze  冻结对象
+Object.freeze({});  // Object.freeze  冻结对象
 foo.prop = 123;
 // 顶层对象 window; global
 // var和function ：声明变量是顶层对象属性
 // let、const、class ：声明不是顶层对象
-var a=1;
 console.log(window.a);
-let b=2;
 console.log(window.b); //undefined
 
 //使用 this 在所有情况下，都取到顶层对象
