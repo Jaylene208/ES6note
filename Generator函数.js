@@ -1,6 +1,7 @@
 function* foo(x, y) { /*···*/ };
 
-'Hello' + (yield);  // yield表达式如果用在另一个表达式之中，必须放在圆括号里面
+// yield表达式如果用在另一个表达式之中，必须放在圆括号里面
+'Hello' + (yield); 
 let input = yield;
 
 // 把 Generator赋值给对象的Symbol.iterator属性，从而使得该对象具有 Iterator 接口
